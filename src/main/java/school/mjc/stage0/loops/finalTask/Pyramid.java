@@ -3,6 +3,7 @@ package school.mjc.stage0.loops.finalTask;
 public class Pyramid {
     public void printPyramid(int cathetusLength) {
         int p,res = 1;
+        String space = " ";
         for(int i=1; i<=cathetusLength; i++){
             p=i;
             for(int j=1; j<=cathetusLength-i; j++)
@@ -17,6 +18,7 @@ public class Pyramid {
                     p++;
             }
             res=1;
+            System.out.print(space.repeat(cathetusLength-i));
             System.out.println();
         }
     }
